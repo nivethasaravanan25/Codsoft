@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Browse Jobs</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar dark-nav">
+  <div class="logo">💼 Job Board</div>
+  <div class="nav-links">
+    <a href="index.html">Home</a>
+    <a href="#">Browse Job</a>
+  </div>
+</nav>
+
+<!-- HEADER -->
+<div class="page-header">
+  <h1>Browse Jobs</h1>
+  <p>Find the job that suits you</p>
+</div>
+
+<!-- SEARCH -->
+<div class="search-box">
+  <input type="text" id="search" placeholder="Search jobs..." onkeyup="searchJobs()">
+</div>
+
+
+<!-- JOB LIST -->
+<div class="container">
+  <div id="jobList" class="job-grid"></div>
+</div>
+<div class="filter-bar">
+  <select id="locationFilter" onchange="filterJobs()">
+    <option value="">All Locations</option>
+    <option>Chennai</option>
+    <option>Bangalore</option>
+  </select>
+
+  <select id="typeFilter" onchange="filterJobs()">
+    <option value="">All Types</option>
+    <option>Full Time</option>
+    <option>Remote</option>
+  </select>
+</div>
+
+<div id="toast" class="toast"></div>
+
+<script src="script.js"></script>
+</body>
+</html>

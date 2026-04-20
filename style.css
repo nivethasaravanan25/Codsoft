@@ -1,0 +1,357 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* NAVBAR */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  background: transparent;
+  position: absolute;
+  width: 100%;
+  color: white;
+}
+
+.logo {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.nav-links a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: white;
+}
+
+.nav-actions a {
+  margin-right: 15px;
+  color: white;
+}
+
+.post-btn {
+  background: #22c55e;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 6px;
+  color: white;
+}
+
+/* HERO */
+.hero-section {
+  height: 90vh;
+  background: linear-gradient(to right, #2563eb, #38bdf8);
+  display: flex;
+  align-items: center;
+  padding: 0 50px;
+  color: white;
+}
+
+.hero-content {
+  max-width: 500px;
+}
+
+.small-text {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.hero-content h1 {
+  font-size: 48px;
+  margin-bottom: 15px;
+}
+
+.sub-text {
+  margin-bottom: 20px;
+}
+
+.cta-btn {
+  background: #22c55e;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 8px;
+  color: white;
+  cursor: pointer;
+}
+
+/* SEARCH BOX */
+.search-box {
+  background: white;
+  padding: 20px;
+  margin: -40px auto;
+  width: 80%;
+  display: flex;
+  gap: 10px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.search-box input,
+.search-box select {
+  padding: 10px;
+  flex: 1;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.search-box button {
+  background: #22c55e;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+}
+/* DARK NAV FOR INNER PAGES */
+.dark-nav {
+  background: #1e293b;
+  position: static;
+}
+
+/* PAGE HEADER */
+.page-header {
+  background: linear-gradient(to right, #2563eb, #38bdf8);
+  color: white;
+  padding: 50px;
+  text-align: center;
+}
+
+/* JOB GRID */
+.job-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+/* JOB CARD IMPROVED */
+.job-card {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  transition: 0.3s;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+}
+
+.job-card:hover {
+  transform: translateY(-5px);
+}
+
+.job-card h3 {
+  margin-bottom: 10px;
+}
+
+.job-card p {
+  color: #666;
+}
+
+/* BUTTONS */
+.card-btn {
+  padding: 8px 12px;
+  border: none;
+  margin-top: 10px;
+  margin-right: 10px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.view-btn {
+  background: #2563eb;
+  color: white;
+}
+
+.save-btn {
+  background: #22c55e;
+  color: white;
+}
+/* DETAIL PAGE LAYOUT */
+.detail-container {
+  display: flex;
+  gap: 30px;
+  padding: 40px;
+}
+
+/* LEFT SIDE */
+.job-main {
+  flex: 2;
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+}
+
+.job-main h2 {
+  margin-bottom: 10px;
+}
+
+.job-main p {
+  margin: 10px 0;
+  color: #555;
+}
+
+/* RIGHT SIDE */
+.job-side {
+  flex: 1;
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  height: fit-content !important; /* FORCE FIX */
+  align-self: flex-start; /* 🔥 VERY IMPORTANT */
+  box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+}
+
+
+.apply-btn {
+  display: block;
+  margin-top: 20px;
+  background: #22c55e;
+  color: white;
+  text-align: center;
+  padding: 12px;
+  border-radius: 8px;
+  text-decoration: none;
+}
+
+/* MOBILE RESPONSIVE */
+@media(max-width: 768px) {
+  .detail-container {
+  display: flex;
+  gap: 30px;
+  padding: 40px;
+  align-items: flex-start !important; /* FORCE FIX */
+}
+}
+.job-side .apply-btn {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  text-align: center;
+}
+/* APPLY PAGE */
+.apply-container {
+  display: flex;
+  justify-content: center;
+  padding: 50px 20px;
+}
+
+.apply-form {
+  background: white;
+  padding: 30px;
+  width: 100%;
+  max-width: 400px;
+  border-radius: 12px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
+
+.apply-form h2 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* INPUTS */
+.apply-form input {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  transition: 0.3s;
+}
+
+.apply-form input:focus {
+  border-color: #2563eb;
+  outline: none;
+}
+
+/* BUTTON */
+.apply-form button {
+  width: 100%;
+  padding: 12px;
+  background: #22c55e;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  margin-top: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.apply-form button:hover {
+  background: #16a34a;
+}
+/* 🔥 FORCE FIX FOR APPLY BUTTON ISSUE */
+.job-side {
+  display: block !important;
+}
+
+.job-side a.apply-btn {
+  display: block !important;
+  width: 100% !important;
+  height: auto !important;   /* VERY IMPORTANT */
+  padding: 12px !important;
+}/* 🔥 FORCE FIX FOR APPLY BUTTON ISSUE */
+.job-side {
+  display: block !important;
+}
+
+.job-side a.apply-btn {
+  display: block !important;
+  width: 100% !important;
+  height: auto !important;   /* VERY IMPORTANT */
+  padding: 12px !important;
+}
+/* PREMIUM NAV */
+.premium-nav {
+  background: rgba(30, 41, 59, 0.8);
+  backdrop-filter: blur(10px);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+/* GLASS EFFECT */
+.job-card, .job-side, .apply-form {
+  background: rgba(255,255,255,0.8);
+  backdrop-filter: blur(10px);
+}
+
+/* HOVER ANIMATION */
+.job-card {
+  transition: 0.3s;
+}
+
+.job-card:hover {
+  transform: translateY(-8px) scale(1.02);
+}
+
+/* BADGES */
+.badge {
+  display: inline-block;
+  padding: 5px 10px;
+  background: #2563eb;
+  color: white;
+  border-radius: 20px;
+  font-size: 12px;
+  margin-right: 5px;
+}
+
+/* FILTER BAR */
+.filter-bar {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.filter-bar select {
+  padding: 10px;
+  border-radius: 6px;
+}
+
+/* SAVE ICON */
+.save-icon {
+  float: right;
+  cursor: pointer;
+  font-size: 18px;
+}
